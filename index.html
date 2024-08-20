@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prayer Times</h1>
+        <form id="prayerForm">
+            <label for="date">Select Date:</label>
+            <input type="month" id="date" name="date" required>
+
+            <label for="location">Location:</label>
+            <select id="location" name="location" required>
+                <option value="51.508515,-0.1254872">London, UK</option>
+                <option value="40.712776,-74.005974">New York, USA</option>
+                <option value="23.810331,90.412521">Dhaka, Bangladesh</option>
+                <option value="35.689487,139.691711">Tokyo, Japan</option>
+                <option value="25.276987,55.296249">Dubai, UAE</option>
+                <option value="48.856613,2.352222">Paris, France</option>
+                <option value="55.755825,37.617298">Moscow, Russia</option>
+                <option value="40.416775,-3.703790">Madrid, Spain</option>
+                <option value="28.613939,77.209023">New Delhi, India</option>
+                <option value="19.432608,-99.133209">Mexico City, Mexico</option>
+                <option value="39.904202,116.407394">Beijing, China</option>
+                <option value="34.052235,-118.243683">Los Angeles, USA</option>
+                <option value="41.902783,12.496366">Rome, Italy</option>
+                <option value="-33.868820,151.209290">Sydney, Australia</option>
+                <option value="-23.550520,-46.633308">São Paulo, Brazil</option>
+                <option value="52.520008,13.404954">Berlin, Germany</option>
+                <option value="31.230391,121.473701">Shanghai, China</option>
+                <option value="37.774929,-122.419418">San Francisco, USA</option>
+                <option value="-34.603722,-58.381592">Buenos Aires, Argentina</option>
+                <option value="37.566536,126.977966">Seoul, South Korea</option>
+            </select>
+
+
+            <button type="submit">Get Prayer Times</button>
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
